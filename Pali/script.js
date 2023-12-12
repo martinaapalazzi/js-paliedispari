@@ -1,10 +1,46 @@
 // const wordPalindroma = document.getElementById ('palindroma')
 
+//const userWord = prompt ("Inserisci una parola");
+
+// console.log(userWord, typeof userWord);
+
 const userWord = prompt ("Inserisci una parola");
 
-console.log(userWord, typeof userWord);
+function wordPalindroma (randomWord) {
+    let word = ""; 
+    let reverseWord = ""; 
 
-function reverseWord(word) {
+    for ( let i = 0; i < randomWord.length; i++) {
+        word = word.concat(randomWord[i]);
+    }
+    console.log(word);
+
+    for ( let i = randomWord.length -1; i >= 0; i--) {
+        reverseWord = reverseWord.concat(randomWord[i]);
+    }
+    console.log(reverseWord);
+
+    if ( word == reverseWord ) {
+        console.log("la parola è palindroma")
+    }
+
+    else {
+        console.log("la parola NON è palindroma")
+    }
+    
+}
+
+wordPalindroma (userWord);
+
+
+
+
+
+
+
+
+
+/* function reverseWord(word) {
     // ritorna il contrario di una parola ciao -> oaic
 }
 
@@ -21,5 +57,7 @@ function palindroma (wordPalindroma) {
 }
 
 if(palindroma(userWord)) {
-    console.log('La parola è palindroma')
+    console.log()
 }
+
+*/ 

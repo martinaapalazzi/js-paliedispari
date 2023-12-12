@@ -26,8 +26,7 @@ function sum (userNumber, computerRandomNumber) {
         if (finalSum % 2 == 0) {
             console.log ("User is the winner")
         }
-    
-         else {
+        else {
             console.log ("Computer wins")
         }
     }
